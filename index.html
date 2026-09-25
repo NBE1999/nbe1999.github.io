@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crosscurrent — A Geopolitical Thriller Series by Noel B. Escalona</title>
+<meta name="description" content="Crosscurrent: a five-book geopolitical thriller series following a retired Philippine Navy captain racing three rival networks across four real Indo-Pacific and Gulf chokepoints. Book I now live on Amazon.">
+
+<link rel="canonical" href="https://www.crosscurrentnovel.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.crosscurrentnovel.com/">
+<meta property="og:title" content="Crosscurrent — A Geopolitical Thriller Series by Noel B. Escalona">
+<meta property="og:description" content="A stolen weapon. Three rival powers. Zero neutral water. Book I of a five-book series across four real Indo-Pacific and Gulf chokepoints — now live on Amazon.">
+<meta property="og:image" content="https://www.crosscurrentnovel.com/crosscurrent-social-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Crosscurrent — A Geopolitical Thriller Series by Noel B. Escalona">
+<meta name="twitter:description" content="A stolen weapon. Three rival powers. Zero neutral water. Book I now live on Amazon.">
+<meta name="twitter:image" content="https://www.crosscurrentnovel.com/crosscurrent-social-preview.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-0:#080e17; --navy-1:#0b1420; --navy-2:#0f1c2c; --navy-3:#132335;
+    --navy-line:#22374a;
+    --cream:#f4ede0; --cream-dim:#cfcabe;
+    --amber:#e0a548; --amber-dim:#c98a3f; --amber-deep:#8a5a20;
+    --sky:#8fc1e0; --muted:#7d8994; --danger:#e0664a;
+    --serif:'Playfair Display', Georgia, serif;
+    --sans:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--navy-1); color:var(--cream); font-family:var(--sans);
+    line-height:1.6; overflow-x:hidden;
+  }
+  a{color:inherit; text-decoration:none;}
+  img,svg{display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+  section{position:relative;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:12px; letter-spacing:2.5px; font-weight:600; text-transform:uppercase;
+    color:var(--amber); border:1px solid var(--amber-deep); border-radius:999px;
+    padding:8px 18px; background:rgba(224,165,72,0.06);
+  }
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--amber); box-shadow:0 0 0 3px rgba(224,165,72,0.2);}
+
+  h1,h2,h3{font-family:var(--serif); font-weight:700; letter-spacing:0.3px;}
+  h2{font-size:clamp(28px,4vw,42px); line-height:1.15; margin-bottom:16px;}
+  .kicker{font-size:13px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--amber-dim); margin-bottom:10px; display:block;}
+  .lede{font-size:18px; color:var(--cream-dim); max-width:620px;}
+  .center{text-align:center; margin-left:auto; margin-right:auto;}
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    font-family:var(--sans); font-weight:600; font-size:15px;
+    padding:16px 30px; border-radius:8px; cursor:pointer; border:1px solid transparent;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{background:linear-gradient(180deg,#eeb968,var(--amber-dim)); color:#241705; box-shadow:0 8px 24px rgba(201,138,63,0.28);}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 12px 30px rgba(201,138,63,0.4);}
+  .btn-ghost{border-color:var(--navy-line); color:var(--cream); background:rgba(255,255,255,0.02);}
+  .btn-ghost:hover{border-color:var(--amber-dim); color:var(--amber);}
+  .btn-sm{padding:10px 20px; font-size:13px;}
+
+  /* NAV */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    padding:22px 0; transition:all .25s ease;
+    border-bottom:1px solid transparent;
+  }
+  header.scrolled{
+    padding:14px 0; background:rgba(8,14,23,0.85); backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--navy-line);
+  }
+  nav{display:flex; align-items:center; justify-content:space-between;}
+  .logo{font-family:var(--serif); font-weight:700; font-size:20px; letter-spacing:2px;}
+  .logo span{color:var(--amber);}
+  .nav-links{display:flex; gap:36px; font-size:14px; font-weight:500; color:var(--cream-dim);}
+  .nav-links a:hover{color:var(--cream);}
+  .nav-cta{display:flex; align-items:center; gap:18px;}
+  .burger{display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:0;}
+  .burger span{width:22px; height:2px; background:var(--cream);}
+
+  /* HERO */
+  .hero{
+    min-height:100vh; display:flex; align-items:center; padding:140px 0 100px;
+    background:
+      radial-gradient(ellipse 900px 500px at 78% 18%, rgba(224,165,72,0.14), transparent 60%),
+      linear-gradient(180deg, #0a1826 0%, #0b1420 55%, #080e17 100%);
+    overflow:hidden;
+  }
+  .hero-grid{position:absolute; inset:0; opacity:0.35; pointer-events:none;}
+  .hero-inner{position:relative; z-index:2; display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:center;}
+  .hero-copy .eyebrow{margin-bottom:26px;}
+  .hero h1{font-size:clamp(38px,5.4vw,64px); line-height:1.08; margin:0 0 22px;}
+  .hero h1 .accent{color:var(--amber);}
+  .hero .lede{font-size:19px; margin-bottom:34px; max-width:560px;}
+  .hero-ctas{display:flex; align-items:center; gap:26px; flex-wrap:wrap; margin-bottom:38px;}
+  .hero-ctas .link-arrow{font-size:14px; font-weight:600; color:var(--cream-dim); border-bottom:1px solid var(--navy-line); padding-bottom:2px;}
+  .hero-ctas .link-arrow:hover{color:var(--amber); border-color:var(--amber-dim);}
+  .trust-row{display:flex; gap:26px; flex-wrap:wrap; font-size:13px; color:var(--muted);}
+  .trust-row span{display:flex; align-items:center; gap:7px;}
+  .trust-row .chk{color:var(--amber);}
+
+  /* compass / illustration */
+  .hero-art{position:relative; display:flex; align-items:center; justify-content:center;}
+  .compass-wrap{position:relative; width:340px; height:340px;}
+  .compass-ring{position:absolute; inset:0; border-radius:50%; border:1px solid var(--navy-line);}
+  .compass-ring.r2{inset:26px; border-color:rgba(224,165,72,0.25);}
+  .compass-ring.r3{inset:52px; border-color:var(--navy-line);}
+  .compass-spin{position:absolute; inset:0; animation:spin 40s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .compass-spin svg{width:100%; height:100%;}
+  .compass-center{
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    font-family:var(--serif); font-size:13px; letter-spacing:3px; color:var(--amber);
+    text-align:center;
+  }
+  .ping{position:absolute; width:6px; height:6px; border-radius:50%; background:var(--sky);}
+  .ping::after{content:''; position:absolute; inset:-6px; border-radius:50%; border:1px solid var(--sky); opacity:.5; animation:pulse 2.4s ease-out infinite;}
+  @keyframes pulse{0%{transform:scale(0.4); opacity:.7;} 100%{transform:scale(2.6); opacity:0;}}
+
+  .scroll-cue{position:absolute; bottom:28px; left:50%; transform:translateX(-50%); font-size:12px; letter-spacing:2px; color:var(--muted); text-align:center;}
+  .scroll-cue .bar{width:1px; height:34px; background:linear-gradient(var(--amber-dim), transparent); margin:10px auto 0; animation:down 1.6s ease-in-out infinite;}
+  @keyframes down{0%,100%{opacity:.3;} 50%{opacity:1;}}
+
+  /* countdown */
+  .countdown{display:flex; gap:14px; margin:8px 0 32px;}
+  .countdown .cell{background:rgba(255,255,255,0.03); border:1px solid var(--navy-line); border-radius:8px; padding:10px 14px; min-width:64px; text-align:center;}
+  .countdown .num{font-family:var(--serif); font-size:24px; font-weight:700; color:var(--cream);}
+  .countdown .lbl{font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-top:2px;}
+
+  /* GENERIC SECTION */
+  .section{padding:110px 0;}
+  .section.alt{background:var(--navy-2);}
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* problem / solution grids */
+  .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:50px;}
+  .grid4{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:50px;}
+  .card{
+    background:rgba(255,255,255,0.02); border:1px solid var(--navy-line); border-radius:14px;
+    padding:32px 26px; transition:border-color .2s ease, transform .2s ease;
+  }
+  .card:hover{border-color:var(--amber-deep); transform:translateY(-4px);}
+  .card .num-tag{font-family:var(--serif); font-size:32px; color:var(--amber-deep); margin-bottom:14px; display:block;}
+  .card h3{font-size:19px; margin-bottom:10px; color:var(--cream);}
+  .card p{font-size:14.5px; color:var(--cream-dim);}
+
+  .card.solution{border-color:rgba(224,165,72,0.18); background:rgba(224,165,72,0.03);}
+  .card.solution .num-tag{color:var(--amber);}
+
+  /* excerpt */
+  .excerpt-panel{
+    background:var(--navy-0); border:1px solid var(--navy-line); border-radius:16px;
+    padding:52px 56px; margin-top:44px; position:relative; overflow:hidden;
+  }
+  .excerpt-panel::before{
+    content:'"'; position:absolute; top:-10px; left:26px; font-family:var(--serif);
+    font-size:140px; color:rgba(224,165,72,0.08); line-height:1;
+  }
+  .excerpt-text{font-family:var(--serif); font-size:20px; line-height:1.75; color:var(--cream); position:relative; z-index:1;}
+  .excerpt-text em.kal-name{color:#000; font-style:normal; background:var(--cream); padding:0 5px; border-radius:3px;}
+  .excerpt-meta{display:flex; align-items:center; justify-content:space-between; margin-top:30px; flex-wrap:wrap; gap:16px;}
+  .excerpt-meta .tag{font-size:13px; color:var(--muted); letter-spacing:1px; text-transform:uppercase;}
+
+  /* proof / stats */
+  .stat-bar{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:50px;}
+  .stat{text-align:center; padding:28px 12px; border-right:1px solid var(--navy-line);}
+  .stat:last-child{border-right:none;}
+  .stat .stat-num{font-family:var(--serif); font-size:42px; font-weight:700; color:var(--amber);}
+  .stat .stat-lbl{font-size:13px; color:var(--cream-dim); margin-top:8px;}
+
+  .author-line{display:flex; gap:22px; align-items:flex-start; margin-top:56px; padding-top:44px; border-top:1px solid var(--navy-line);}
+  .author-avatar{width:56px; height:56px; border-radius:50%; background:linear-gradient(160deg,var(--amber-dim),var(--navy-0)); flex-shrink:0; display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-weight:700; color:var(--cream);}
+  .author-line p{color:var(--cream-dim); font-size:15px; max-width:640px;}
+  .author-line strong{color:var(--cream); font-weight:600;}
+
+  .quote-placeholder{
+    margin-top:30px; border:1px dashed var(--navy-line); border-radius:12px; padding:26px 30px;
+    font-size:13.5px; color:var(--muted); font-style:italic;
+  }
+
+  /* series roadmap */
+  .book-row{display:grid; grid-template-columns:repeat(5,1fr); gap:20px; margin-top:52px;}
+  .book-card{
+    aspect-ratio:2/3; border-radius:12px; position:relative; overflow:hidden;
+    border:1px solid var(--navy-line); display:flex; flex-direction:column; justify-content:flex-end;
+    padding:18px; transition:transform .25s ease, border-color .25s ease;
+  }
+  .book-card:hover{transform:translateY(-6px);}
+  .book-card.live{
+    background:
+      radial-gradient(circle at 70% 20%, rgba(224,165,72,0.35), transparent 55%),
+      linear-gradient(200deg,#1d3f5c,#0b1420 60%,#04080c);
+    border-color:var(--amber-dim);
+  }
+  .book-card.locked{background:var(--navy-2);}
+  .book-card .b-num{font-family:var(--serif); font-size:13px; letter-spacing:3px; color:var(--amber); margin-bottom:6px;}
+  .book-card.locked .b-num{color:var(--muted);}
+  .book-card .b-title{font-family:var(--serif); font-size:20px; font-weight:700; margin-bottom:8px;}
+  .book-card.locked .b-title{color:var(--cream-dim); font-size:16px;}
+  .book-card .b-status{font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--cream-dim);}
+  .book-card.locked .b-status{color:var(--muted);}
+  .lock-icon{position:absolute; top:16px; right:16px; opacity:.5;}
+  .book-card .b-cta{margin-top:12px; font-size:12px; font-weight:600; color:var(--amber);}
+
+  .signup-row{
+    margin-top:56px; display:flex; gap:14px; align-items:center; flex-wrap:wrap;
+    background:rgba(255,255,255,0.02); border:1px solid var(--navy-line); border-radius:14px; padding:28px 32px;
+  }
+  .signup-copy{flex:1; min-width:240px;}
+  .signup-copy h3{font-size:18px; margin-bottom:6px;}
+  .signup-copy p{font-size:13.5px; color:var(--cream-dim);}
+  .signup-form{display:flex; gap:10px; flex:1; min-width:280px;}
+  .signup-form input{
+    flex:1; background:var(--navy-0); border:1px solid var(--navy-line); border-radius:8px;
+    padding:14px 16px; color:var(--cream); font-family:var(--sans); font-size:14px;
+  }
+  .signup-form input::placeholder{color:var(--muted);}
+  .signup-form input:focus{outline:none; border-color:var(--amber-dim);}
+
+  /* final cta */
+  .final-cta{
+    background:
+      radial-gradient(ellipse 800px 400px at 50% 0%, rgba(224,165,72,0.14), transparent 60%),
+      var(--navy-0);
+    text-align:center; padding:130px 0;
+  }
+  .final-cta h2{font-size:clamp(30px,4.6vw,50px); max-width:760px; margin:0 auto 18px;}
+  .final-cta .lede{margin:0 auto 40px;}
+  .final-buttons{display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin-bottom:34px;}
+  .price-flag{
+    display:inline-flex; align-items:center; gap:10px; font-size:13px; color:var(--muted);
+    margin-bottom:30px; letter-spacing:.3px;
+  }
+  .price-flag .old{text-decoration:line-through; color:var(--navy-line);}
+  .final-trust{display:flex; gap:30px; justify-content:center; flex-wrap:wrap; font-size:13px; color:var(--muted);}
+
+  footer{padding:50px 0 40px; border-top:1px solid var(--navy-line); background:var(--navy-0);}
+  .footer-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
+  .footer-links{display:flex; gap:26px; font-size:13px; color:var(--muted);}
+  .footer-links a:hover{color:var(--cream);}
+  .footer-copy{font-size:12.5px; color:var(--muted);}
+
+  @media (max-width:900px){
+    .hero-inner{grid-template-columns:1fr; text-align:left;}
+    .hero-art{order:-1; margin-bottom:20px;}
+    .compass-wrap{width:220px; height:220px;}
+    .grid3, .grid4, .book-row, .stat-bar{grid-template-columns:repeat(2,1fr);}
+    .nav-links{display:none;}
+    .burger{display:flex;}
+    .stat{border-right:none; border-bottom:1px solid var(--navy-line);}
+  }
+  @media (max-width:560px){
+    .grid3, .grid4, .book-row, .stat-bar{grid-template-columns:1fr;}
+    .excerpt-panel{padding:34px 24px;}
+    .countdown{flex-wrap:wrap;}
+  }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="logo">CROSS<span>CURRENT</span></a>
+      <div class="nav-links">
+        <a href="#problem">Why It's Different</a>
+        <a href="#excerpt">Read an Excerpt</a>
+        <a href="#proof">The Series</a>
+        <a href="#roadmap">Books I–V</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#buy" class="btn btn-primary btn-sm">Get the book</a>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <svg class="hero-grid" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+    <g stroke="#8fc1e0" stroke-width="0.5">
+      <line x1="120" y1="120" x2="260" y2="200"/><line x1="260" y1="200" x2="420" y2="140"/>
+      <line x1="420" y1="140" x2="560" y2="220"/><line x1="700" y1="100" x2="820" y2="170"/>
+      <line x1="820" y1="170" x2="960" y2="120"/><line x1="200" y1="320" x2="340" y2="380"/>
+      <line x1="620" y1="340" x2="760" y2="300"/><line x1="900" y1="380" x2="1040" y2="330"/>
+    </g>
+    <g fill="#8fc1e0">
+      <circle cx="120" cy="120" r="2.4"/><circle cx="260" cy="200" r="2.4"/><circle cx="420" cy="140" r="2.4"/>
+      <circle cx="560" cy="220" r="2.4"/><circle cx="700" cy="100" r="2.4"/><circle cx="820" cy="170" r="2.4"/>
+      <circle cx="960" cy="120" r="2.4"/><circle cx="200" cy="320" r="2.4"/><circle cx="340" cy="380" r="2.4"/>
+      <circle cx="620" cy="340" r="2.4"/><circle cx="760" cy="300" r="2.4"/><circle cx="900" cy="380" r="2.4"/>
+      <circle cx="1040" cy="330" r="2.4"/>
+    </g>
+  </svg>
+
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot"></span>THE CROSSCURRENT SERIES · BOOK I OUT NOW</span>
+      <h1>A stolen weapon.<br>Three rival powers.<br><span class="accent">Zero neutral water.</span></h1>
+      <p class="lede">Crosscurrent is a five-book series following a retired Philippine Navy captain racing three intelligence networks across four real Indo-Pacific and Gulf chokepoints — before today's gray-zone headlines become tomorrow's war.</p>
+
+      <div class="countdown" id="countdown">
+        <div class="cell"><div class="num" id="cd-days">--</div><div class="lbl">Days</div></div>
+        <div class="cell"><div class="num" id="cd-hours">--</div><div class="lbl">Hours</div></div>
+        <div class="cell"><div class="num" id="cd-mins">--</div><div class="lbl">Mins</div></div>
+        <div class="cell"><div class="num" id="cd-secs">--</div><div class="lbl">Secs</div></div>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#buy" class="btn btn-primary">Get Book I — $0.99 on Kindle</a>
+        <a href="#excerpt" class="link-arrow">Read the opening pages ↓</a>
+      </div>
+
+      <div class="trust-row">
+        <span><span class="chk">✓</span> Kindle &amp; paperback</span>
+        <span><span class="chk">✓</span> Instant delivery</span>
+        <span><span class="chk">✓</span> Book I of V</span>
+        <span><span class="chk">✓</span> Written by a Navy Captain</span>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="compass-wrap">
+        <div class="compass-ring"></div>
+        <div class="compass-ring r2"></div>
+        <div class="compass-ring r3"></div>
+        <div class="compass-spin">
+          <svg viewBox="0 0 340 340">
+            <g stroke="#e0a548" stroke-width="1" fill="none" opacity="0.9">
+              <line x1="170" y1="30" x2="170" y2="310"/>
+              <line x1="30" y1="170" x2="310" y2="170"/>
+              <line x1="60" y1="60" x2="280" y2="280"/>
+              <line x1="280" y1="60" x2="60" y2="280"/>
+            </g>
+          </svg>
+        </div>
+        <div class="compass-center">CROSSCURRENT<br>BOOK I</div>
+        <div class="ping" style="top:22%; left:70%;"></div>
+        <div class="ping" style="top:68%; left:24%;"></div>
+        <div class="ping" style="top:78%; left:66%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">SCROLL<div class="bar"></div></div>
+</section>
+
+<section class="section" id="problem">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">The problem</span>
+      <h2>Most thrillers get the West Philippine Sea and South China Sea wrong.</h2>
+      <p class="lede">Readers who follow the region's real tension keep running into the same three gaps in the fiction written about it.</p>
+    </div>
+    <div class="grid3 reveal">
+      <div class="card">
+        <span class="num-tag">01</span>
+        <h3>Written from the outside</h3>
+        <p>Most gray-zone fiction sits at the level of admirals and national command authority. You never meet the fisherman, the seafarer, or the sailor actually standing in the water.</p>
+      </div>
+      <div class="card">
+        <span class="num-tag">02</span>
+        <h3>Frozen in one headline</h3>
+        <p>Most treat the region as a single flashpoint between two superpowers — not three or more rival networks working the same chokepoints at once, each with different appetites.</p>
+      </div>
+      <div class="card">
+        <span class="num-tag">03</span>
+        <h3>All strategy, no people</h3>
+        <p>The human cost — hostages, families, remittance economies — gets reduced to a footnote instead of the engine that actually drives the plot forward.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="solution">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">The solution</span>
+      <h2>Crosscurrent was built to fix that.</h2>
+      <p class="lede">One retired captain. Three rival networks. Four real chokepoints. A series designed around the gray zone as it actually works.</p>
+    </div>
+    <div class="grid4 reveal">
+      <div class="card solution">
+        <span class="num-tag">1</span>
+        <h3>Real geography</h3>
+        <p>The story moves through four actual flashpoints — Scarborough Shoal, the Strait of Hormuz, the Gulf of Aden, and Diego Garcia — not invented stand-ins.</p>
+      </div>
+      <div class="card solution">
+        <span class="num-tag">2</span>
+        <h3>Three rival networks</h3>
+        <p>Red Coral, Saffron Tide, and Razor Gyre — three intelligence and mercenary networks racing for the same stolen technology, each playing a different game.</p>
+      </div>
+      <div class="card solution">
+        <span class="num-tag">3</span>
+        <h3>Human stakes</h3>
+        <p>A kidnapped Filipino seafarer and the daughter waiting for him keep the geopolitics tethered to the people who actually pay for it.</p>
+      </div>
+      <div class="card solution">
+        <span class="num-tag">4</span>
+        <h3>A five-book arc</h3>
+        <p>Crosscurrent is Book I of a five-book series tracking one operating architecture as it moves from ocean to ocean.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="excerpt">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">No spoilers, just the opening</span>
+      <h2>Read the first page.</h2>
+      <p class="lede">Exactly as it appears in the book — the storm, the ghost ship, and the mission that starts everything.</p>
+    </div>
+    <div class="excerpt-panel reveal">
+      <p class="excerpt-text">
+        The sea east of Luzon had gone black in the way only typhoon water could, less a color than an intention. From the open side door of the Navy helicopter, Lucas <em class="kal-name">"Kal"</em> Calderon watched the storm-torn Pacific pitch and heave below him in long, muscular swells. Rotor wash flattened the rain into silver slashes. Beyond the noise and darkness, lightning stitched brief white wounds across the horizon, revealing the ocean in fragments before hiding it again.
+        <br><br>
+        Then the ship appeared.
+      </p>
+      <div class="excerpt-meta">
+        <span class="tag">Prologue — Ghosts Over Apo Reef</span>
+        <a href="#buy" class="btn btn-ghost btn-sm">Continue reading on Amazon →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="proof">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Built on real water</span>
+      <h2>Not a stock plot with a map stapled on.</h2>
+    </div>
+    <div class="stat-bar reveal">
+      <div class="stat"><div class="stat-num" data-count="28">0</div><div class="stat-lbl">Chapters</div></div>
+      <div class="stat"><div class="stat-num" data-count="4">0</div><div class="stat-lbl">Real chokepoints</div></div>
+      <div class="stat"><div class="stat-num" data-count="3">0</div><div class="stat-lbl">Rival networks</div></div>
+      <div class="stat"><div class="stat-num" data-count="1">0</div><div class="stat-lbl">Stolen technology</div></div>
+    </div>
+    <div class="author-line reveal">
+      <div class="author-avatar">NE</div>
+      <div>
+        <p style="margin-bottom:10px; color:var(--cream);"><strong>Noel B. Escalona</strong> — Captain, Philippine Navy · PMA "Masikhay" Class of 1999</p>
+        <p>Born and raised in Dumaguete City, Captain Escalona is a graduate of Silliman University and the Philippine Military Academy. A Command-at-Sea Badge holder and experienced ship captain, he has commanded Philippine Navy warships throughout the archipelago and served extensively in and around the West Philippine Sea and South China Sea, as well as on an overseas posting with the Combined Maritime Forces in the Kingdom of Bahrain — the same waters at the center of Crosscurrent. He holds a Master of National Security Administration from the National Defense College of the Philippines, a Master in Development Management from the Asian Institute of Management, and a Master in Military Command from the Naval Command College in Nanjing, PRC. Crosscurrent draws directly from his professional background and experiences at sea, blending operational realism with geopolitical fiction. He currently lives in Talisay City, Cebu with his wife, Christy Liza, and their children, Kristina and Nylah.</p>
+      </div>
+    </div>
+    <div class="quote-placeholder reveal">
+      Early reader and reviewer quotes will appear here once available — replace this block with real blurbs as they come in. Don't publish invented testimonials.
+    </div>
+  </div>
+</section>
+
+<section class="section" id="roadmap">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">The full arc</span>
+      <h2>Five books. One operating architecture. Ocean after ocean.</h2>
+      <p class="lede">Book I is live now. Books II–V continue the chase — join the list to hear the moment each one drops.</p>
+    </div>
+    <div class="book-row reveal">
+      <div class="book-card live">
+        <div class="b-num">BOOK I</div>
+        <div class="b-title">Crosscurrent</div>
+        <div class="b-status">Available now</div>
+        <a href="#buy" class="b-cta">Get it →</a>
+      </div>
+      <div class="book-card locked">
+        <div class="lock-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7d8994" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <div class="b-num">BOOK II</div>
+        <div class="b-title">Tidebreak</div>
+        <div class="b-status">Coming next</div>
+      </div>
+      <div class="book-card locked">
+        <div class="lock-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7d8994" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <div class="b-num">BOOK III</div>
+        <div class="b-title">Coming soon</div>
+        <div class="b-status">Announced later</div>
+      </div>
+      <div class="book-card locked">
+        <div class="lock-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7d8994" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <div class="b-num">BOOK IV</div>
+        <div class="b-title">Coming soon</div>
+        <div class="b-status">Announced later</div>
+      </div>
+      <div class="book-card locked">
+        <div class="lock-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7d8994" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <div class="b-num">BOOK V</div>
+        <div class="b-title">Coming soon</div>
+        <div class="b-status">Announced later</div>
+      </div>
+    </div>
+
+    <div class="signup-row reveal">
+      <div class="signup-copy">
+        <h3>Be first to know when Book II drops</h3>
+        <p>No spam — just launch dates, cover reveals, and early excerpts as the series continues.</p>
+      </div>
+      <form class="signup-form" onsubmit="return handleSignup(event)">
+        <input type="email" placeholder="you@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary btn-sm">Notify me</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta" id="buy">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow center" style="display:inline-flex;"><span class="dot"></span>LIMITED-TIME LAUNCH PRICE</span>
+      <h2 class="center">Your next favorite thriller is $0.99 away.</h2>
+      <p class="lede center">Launch pricing won't last. Kindle delivers Book I in seconds — the paperback ships straight from Amazon.</p>
+      <div class="price-flag center" style="justify-content:center;">Kindle <strong style="color:var(--amber);">$0.99</strong> · paperback also available</div>
+      <div class="final-buttons">
+        <a href="#" class="btn btn-primary">Buy on Kindle — $0.99</a>
+        <a href="#" class="btn btn-ghost">Get the paperback</a>
+      </div>
+      <div class="final-trust">
+        <span>28 chapters, 4 oceans</span>
+        <span>Book I of V</span>
+        <span>Kindle &amp; paperback on Amazon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <a href="#top" class="logo" style="font-size:16px;">CROSS<span>CURRENT</span></a>
+    <div class="footer-links">
+      <a href="#problem">Why It's Different</a>
+      <a href="#excerpt">Excerpt</a>
+      <a href="#roadmap">The Series</a>
+      <a href="#buy">Get the Book</a>
+    </div>
+    <div class="footer-copy">© 2026 Noel B. Escalona · The Crosscurrent Series</div>
+  </div>
+</footer>
+
+<script>
+  // sticky header
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // count-up stats
+  const statEls = document.querySelectorAll('.stat-num');
+  const statIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseInt(el.getAttribute('data-count'), 10);
+      let current = 0;
+      const step = Math.max(1, Math.ceil(target / 30));
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = current;
+      }, 40);
+      statIO.unobserve(el);
+    });
+  }, { threshold: 0.4 });
+  statEls.forEach(el => statIO.observe(el));
+
+  // countdown to launch
+  function updateCountdown(){
+    const target = new Date('2026-07-27T00:00:00');
+    const now = new Date();
+    const diff = target - now;
+    const cd = document.getElementById('countdown');
+    if (diff <= 0){
+      cd.innerHTML = '<div class="cell" style="min-width:auto; padding:10px 20px;"><div class="num" style="font-size:16px;">Available now</div></div>';
+      return;
+    }
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff / (1000*60*60)) % 24);
+    const mins = Math.floor((diff / (1000*60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+    document.getElementById('cd-days').textContent = days;
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // signup placeholder
+  function handleSignup(e){
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    const original = btn.textContent;
+    btn.textContent = 'Added ✓';
+    setTimeout(() => { btn.textContent = original; e.target.reset(); }, 2200);
+    return false;
+  }
+
+  // mobile menu (simple toggle for future expansion)
+  document.querySelector('.burger').addEventListener('click', () => {
+    document.querySelector('.nav-links').style.display =
+      document.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex';
+  });
+</script>
+
+</body>
+</html>
