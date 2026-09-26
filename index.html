@@ -211,8 +211,10 @@
   .book-card:hover{transform:translateY(-6px);}
   .book-card.live{
     background:
-      radial-gradient(circle at 70% 20%, rgba(224,165,72,0.35), transparent 55%),
-      linear-gradient(200deg,#1d3f5c,#0b1420 60%,#04080c);
+      linear-gradient(0deg, rgba(4,8,12,0.92) 0%, rgba(4,8,12,0.15) 45%, rgba(4,8,12,0.05) 100%),
+      url('book1-cover.jpg');
+    background-size:cover;
+    background-position:center;
     border-color:var(--amber-dim);
   }
   .book-card.locked{background:var(--navy-2);}
