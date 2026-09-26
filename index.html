@@ -187,6 +187,20 @@
     font-size:13.5px; color:var(--muted); font-style:italic;
   }
 
+  /* reader testimonials */
+  .t-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:30px;}
+  .t-card{
+    background:rgba(255,255,255,0.02); border:1px solid var(--navy-line); border-radius:14px;
+    padding:26px 24px; display:flex; flex-direction:column; transition:border-color .2s ease, transform .2s ease;
+  }
+  .t-card:hover{border-color:var(--amber-deep); transform:translateY(-4px);}
+  .t-stars{color:var(--amber); font-size:13px; letter-spacing:2px; margin-bottom:12px;}
+  .t-quote{font-size:14.5px; color:var(--cream-dim); line-height:1.55; flex:1;}
+  .t-source{margin-top:16px; padding-top:14px; border-top:1px solid var(--navy-line); font-size:12.5px; color:var(--muted);}
+  .t-source strong{color:var(--cream-dim); font-weight:600;}
+  @media (max-width:900px){ .t-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .t-grid{grid-template-columns:1fr;} }
+
   /* series roadmap */
   .book-row{display:grid; grid-template-columns:repeat(5,1fr); gap:20px; margin-top:52px;}
   .book-card{
@@ -453,8 +467,36 @@
         <p>Born and raised in Dumaguete City, Captain Escalona is a graduate of Silliman University and the Philippine Military Academy. A Command-at-Sea Badge holder and experienced ship captain, he has commanded Philippine Navy warships throughout the archipelago and served extensively in and around the West Philippine Sea and South China Sea, as well as on an overseas posting with the Combined Maritime Forces in the Kingdom of Bahrain — the same waters at the center of Crosscurrent. He holds a Master of National Security Administration from the National Defense College of the Philippines, a Master in Development Management from the Asian Institute of Management, and a Master in Military Command from the Naval Command College in Nanjing, PRC. Crosscurrent draws directly from his professional background and experiences at sea, blending operational realism with geopolitical fiction. He currently lives in Talisay City, Cebu with his wife, Christy Liza, and their children, Kristina and Nylah.</p>
       </div>
     </div>
-    <div class="quote-placeholder reveal">
-      Early reader and reviewer quotes will appear here once available — replace this block with real blurbs as they come in. Don't publish invented testimonials.
+    <div class="t-grid reveal">
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"Gripping page-turner! Easy read even for one w/o any maritime background."</p>
+        <div class="t-source"><strong>km</strong> — Amazon review, Kindle edition</div>
+      </div>
+      <div class="t-card">
+        <p class="t-quote">"If the read sounds realistic, thank God it's fiction. But it sure is closer to the high stakes game our men and women in uniform put themselves in than anything you can get in the fiction genre. Pick it up. 'Coz you won't put it down till you're done."</p>
+        <div class="t-source"><strong>Francisco Ashley Acedillo</strong> — Amazon review, Paperback edition</div>
+      </div>
+      <div class="t-card">
+        <p class="t-quote">"You well express the problem through characters, conflict, and strategic suspense; you express it through structured intelligence, ALARP controls, decision gates, and operational recommendations."</p>
+        <div class="t-source"><strong>Capt. Lee Stuart, USN</strong> — Maritime security consultant</div>
+      </div>
+      <div class="t-card">
+        <p class="t-quote">"Still on the opening pages but already thrilled at the character build up and the mystery suspense... This fiction is real."</p>
+        <div class="t-source"><strong>Eileen Leyva</strong> — Early reader</div>
+      </div>
+      <div class="t-card">
+        <p class="t-quote">"Excellently & skillfully written... Crosscurrent at Amazon."</p>
+        <div class="t-source"><strong>Renne Patero Subido</strong> — Early reader</div>
+      </div>
+      <div class="t-card">
+        <p class="t-quote">"Just got my copy. Congratulations, Noel! Impressive."</p>
+        <div class="t-source"><strong>Shiela Sotto</strong> — Early reader</div>
+      </div>
+      <div class="t-card">
+        <p class="t-quote">"Looking forward to seeing this in the international literary stage, alongside masterful works of fiction of renowned authors such as Dan Brown and David Baldacci... Plot and storyline are dynamic in a way that keeps the reader excited and more interested in the next chapter."</p>
+        <div class="t-source"><strong>LCDR Herlaine Montano, PN</strong> — Early reader</div>
+      </div>
     </div>
   </div>
 </section>
